@@ -2,8 +2,183 @@
     "patches": [
         {
             "label": "2025-12-01_15-55-52",
-            "content": "",
+            "content": "@@ -1,912 +0,0 @@\n-from abc import ABC, abstractmethod%0A%0Aclass Shapes(ABC):%0A    @abstractmethod%0A    def getarea(self):%0A        pass%0A    @abstractmethod%0A    def getpertimeter(self):%0A        pass%0A    @abstractmethod    %0A    def getname(self):%0A        pass%0A%0Aclass Point2D:%0A    def __init__(self, x: int, y: int):%0A        self.x = x%0A        self.y = y%0A    %0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.x%7D,%7Bself.y%7D%22%0A        %0Aclass Circle(Shapes):%0A    def __init__(self, radius: int, center: Point2D):%0A        self.nome = %22Circ%22%0A        self.radius = radius%0A        self.center = center%0A    %0A    def getarea(self):%0A        return super().getarea()%0A    def getname(self):%0A        return super().getname()%0A    def getpertimeter(self):%0A        return super().getpertimeter()%0A    def __str__(self) -%3E str:%0A        return f'%7Bself.nome%7D: C = %7Bself.center%7D, R = %7Bself.radius%7D'%0A        %0A        %0Acirculos = Circle(2, 2, 2)%0Aprint(circulos)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-12-09_10-41-59",
+            "content": "@@ -883,16 +883,20 @@\n ircle(2,\n+ 2, \n 2)%0Aprint\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-12-09_10-42-11",
+            "content": "@@ -858,31 +858,8 @@\n    %0A\n-%0Apontos = Point2D(2, 3)\n     \n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-12-09_10-43-07",
+            "content": "@@ -913,22 +913,8 @@\n ,2)%0A\n-print(pontos)%0A\n prin\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-12-09_10-43-13",
+            "content": "@@ -904,22 +904,17 @@\n  Circle(\n-pontos\n+2\n ,2)%0Aprin\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-12-09_10-43-24",
+            "content": "@@ -380,20 +380,16 @@\n %22%7Bself.x\n-:.2f\n %7D,%7Bself.\n@@ -393,12 +393,8 @@\n lf.y\n-:.2f\n %7D%22%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-12-09_10-45-12",
+            "content": "@@ -53,72 +53,8 @@\n C):%0A\n-    def __init__(self, nome:str):%0A        self.nome = nome%0A    %0A\n     \n@@ -61,32 +61,32 @@\n @abstractmethod%0A\n+\n     def getarea(\n@@ -226,24 +226,12 @@\n     \n-return self.nome\n+pass\n %0A%0Acl\n@@ -485,16 +485,43 @@\n int2D):%0A\n+        self.nome = %22Circ%22%0A\n         \n@@ -916,17 +916,16 @@\n cle(\n-2, \n pontos\n+,2\n )%0Apr\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-12-09_10-51-37",
+            "content": "@@ -855,14 +855,19 @@\n n f'\n-circle\n+%7Bself.nome%7D\n : C \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-51-53",
+            "content": "@@ -855,16 +855,18 @@\n n f'circ\n+le\n : C = %7Bs\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-52-03",
+            "content": "@@ -851,17 +851,17 @@\n eturn f'\n-C\n+c\n irc: C =\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-52-17",
+            "content": "@@ -905,16 +905,40 @@\n       %0A%0A\n+pontos = Point2D(2, 3)  \n       %0Ac\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-53-22",
+            "content": "@@ -937,14 +937,29 @@\n (2, \n-3, 5)%0A\n+pontos)%0Aprint(pontos)\n %0Apri\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-53-28",
+            "content": "@@ -909,30 +909,8 @@\n   %0A%0A\n-pontos = Point2D(2, 5)\n     \n@@ -937,29 +937,14 @@\n (2, \n-pontos)%0Aprint(pontos)\n+3, 5)%0A\n %0Apri\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-54-23",
+            "content": "@@ -861,17 +861,16 @@\n rc: C = \n-(\n %7Bself.ce\n@@ -874,17 +874,16 @@\n .center%7D\n-)\n , R = %7Bs\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-54-46",
+            "content": "@@ -975,22 +975,14 @@\n int(\n-%22circle 2 3 5%22\n+pontos\n )%0Apr\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-55-09",
+            "content": "@@ -976,9 +976,8 @@\n nt(%22\n-$\n circ\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-55-17",
+            "content": "@@ -992,18 +992,8 @@\n 5%22)%0A\n-print(%22%22)%0A\n prin\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-12-09_10-55-35",
+            "content": "@@ -999,12 +999,8 @@\n nt(%22\n-$end\n %22)%0Ap\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-55-38",
+            "content": "@@ -1000,12 +1000,11 @@\n t(%22$\n-show\n+end\n %22)%0Ap\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-55-57",
+            "content": "@@ -858,17 +858,19 @@\n 'Circ: C\n-=\n+ = \n (%7Bself.c\n@@ -879,17 +879,19 @@\n ter%7D), R\n-=\n+ = \n %7Bself.ra\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-56-12",
+            "content": "@@ -875,16 +875,17 @@\n enter%7D),\n+ \n R=%7Bself.\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-56-36",
+            "content": "@@ -919,17 +919,17 @@\n Point2D(\n-3\n+2\n , 5)    \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-56-36",
+            "content": "@@ -923,12 +923,12 @@\n t2D(\n-2, 3\n+3, 5\n )   \n@@ -949,17 +949,17 @@\n  Circle(\n-5\n+2\n , pontos\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-56-59",
+            "content": "@@ -462,17 +462,16 @@\n .x:.2f%7D,\n- \n %7Bself.y:\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-57-19",
+            "content": "@@ -876,17 +876,16 @@\n enter%7D),\n- \n R=%7Bself.\n@@ -890,20 +890,16 @@\n f.radius\n-:.2f\n %7D'%0A     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_10-57-42",
+            "content": "@@ -530,16 +530,29 @@\n __(self,\n+ radius: int,\n  center:\n@@ -563,20 +563,8 @@\n nt2D\n-, radius:int\n ):%0A \n@@ -898,16 +898,24 @@\n s:.2f%7D'%0A\n+        \n %0A%0Apontos\n@@ -959,17 +959,17 @@\n cle(\n+5, \n pontos\n-, 5\n )%0Apr\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_11-00-00",
+            "content": "@@ -1014,12 +1014,4 @@\n los)\n-%0Aprint()\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-12-09_11-00-12",
+            "content": "@@ -1021,11 +1021,5 @@\n int(\n-%22$end%22\n )\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-12-09_11-00-13",
+            "content": "@@ -903,200 +903,8 @@\n '%0A%0A%0A\n-def main():%0A    while True:%0A        linha = input()%0A        args = linha.split(' ')%0A        print(%22$%22 + linha)%0A        if args%5B0%5D == 'end':%0A            break%0A        if args%5B0%5D == ''%0Amain()%0A# \n pont\n@@ -928,18 +928,16 @@\n )      %0A\n-# \n circulos\n@@ -957,18 +957,16 @@\n tos, 5)%0A\n-# \n print(%22$\n@@ -980,18 +980,16 @@\n 2 3 5%22)%0A\n-# \n print(%22$\n@@ -995,18 +995,16 @@\n $show%22)%0A\n-# \n print(ci\n@@ -1015,10 +1015,8 @@\n os)%0A\n-# \n prin\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-12-09_11-03-36",
+            "content": "@@ -1057,16 +1057,41 @@\n   break%0A\n+        if args%5B0%5D == ''%0A\n main()%0A#\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-12-09_11-03-42",
+            "content": "@@ -1,1097 +1,113 @@\n-from abc import ABC, abstractmethod%0A%0Aclass Shapes(ABC):%0A    def __init__(self, nome:str):%0A        self.nome = nome%0A    %0A    @abstractmethod%0A    def getarea(self):%0A        pass%0A    @abstractmethod%0A    def getpertimeter(self):%0A        pass%0A    @abstractmethod    %0A    def getname(self):%0A        return self.nome%0A%0Aclass Point2D:%0A    def __init__(self, x: int, y: int):%0A        self.x = x%0A        self.y = y%0A    %0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.x:.2f%7D, %7Bself.y:.2f%7D%22%0A        %0Aclass Circle(Shapes):%0A    def __init__(self, center: Point2D, radius:int):%0A        self.radius = radius%0A        self.center = center%0A    %0A    def getarea(self):%0A        return super().getarea()%0A    def getname(self):%0A        return super().getname()%0A    def getpertimeter(self):%0A        return super().getpertimeter()%0A    def __str__(self) -%3E str:%0A        return f'Circ: C=(%7Bself.center%7D), R=%7Bself.radius:.2f%7D'%0A%0A%0Adef main():%0A    forms: list%5BShapes%5D = %5B%5D%0A    while True:%0A        linha = input()%0A        args = linha.split(' ')%0A        print(%22$%22 + linha)%0A        if args%5B0%5D == 'end':%0A            break%0A\n+@@ -915,37 +915,8 @@%0A ():%250A%0A-    forms: list%255BShapes%255D = %255B%255D%250A%0A     %0A@@ -1061,306 +1061,8 @@%0A eak%250A%0A-\n     \n@@ -115,27 +115,31 @@\n    elif args\n-%5B0%5D\n+%255B0%255D\n  == 'circle'\n@@ -139,17 +139,19 @@\n circle':\n-%0A\n+%250A\n         \n@@ -170,13 +170,19 @@\n args\n-%5B1%5D)%0A\n+%255B1%255D)%250A\n     \n@@ -205,13 +205,19 @@\n args\n-%5B2%5D)%0A\n+%255B2%255D)%250A\n     \n@@ -240,13 +240,19 @@\n args\n-%5B3%5D)%0A\n+%255B3%255D)%250A\n     \n@@ -281,17 +281,19 @@\n 2D(x, y)\n-%0A\n+%250A\n         \n@@ -322,17 +322,19 @@\n nter, r)\n-%0A\n+%250A\n         \n@@ -357,17 +357,19 @@\n (circle)\n-%0A\n+%250A\n         \n@@ -381,11 +381,15 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n@@ -395,18 +395,19 @@\n  'show':\n-%0A \n+%250A\n         \n@@ -413,28 +413,24 @@\n     \n-for shape in \n+ print(\n forms\n-:%0A\n+)%250A\n     \n@@ -441,178 +441,14 @@\n     \n-    print(shape)%0A            %0Amain()%0A# pontos = Point2D(2, 3)      %0A# circulos = Circle(pontos, 5)%0A# print(%22$circle 2 3 5%22)%0A# print(%22$show%22)%0A# print(circulos)%0A# print(%22$end%22)\n+%250A%0A main%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-12-09_11-14-15",
+            "content": "@@ -1362,19 +1362,55 @@\n     \n-print(forms\n+for shape in forms:%0A                print(shape\n )%0A  \n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-12-09_11-14-32",
+            "content": "@@ -559,12 +559,10 @@\n ius:\n-floa\n+in\n t):%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-12-09_11-15-02",
+            "content": "@@ -1196,20 +1196,18 @@\n     r = \n-floa\n+in\n t(args%5B3\n@@ -1364,47 +1364,19 @@\n     \n-for i in forms:%0A                print(i\n+print(forms\n )%0A  \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-12-09_11-15-13",
+            "content": "@@ -946,21 +946,8 @@\n  %5B%5D%0A\n-    try:%0A    \n     \n@@ -966,20 +966,16 @@\n         \n- \n-   \n linha = \n@@ -982,20 +982,16 @@\n input()%0A\n-    \n         \n@@ -1018,28 +1018,24 @@\n  ')%0A        \n-    \n print(%22$%22 + \n@@ -1049,20 +1049,16 @@\n         \n-  \n-  \n if args%5B\n@@ -1082,20 +1082,16 @@\n         \n-    \n break%0A  \n@@ -1088,36 +1088,32 @@\n   break%0A        \n- \n-   \n elif args%5B0%5D == \n@@ -1134,20 +1134,16 @@\n         \n-   \n- \n x = int(\n@@ -1151,20 +1151,16 @@\n rgs%5B1%5D)%0A\n-    \n         \n@@ -1192,20 +1192,16 @@\n         \n-  \n-  \n r = floa\n@@ -1211,20 +1211,16 @@\n rgs%5B3%5D)%0A\n-    \n         \n@@ -1258,20 +1258,16 @@\n         \n-    \n circle =\n@@ -1297,20 +1297,16 @@\n         \n-   \n- \n forms.ap\n@@ -1318,20 +1318,16 @@\n circle)%0A\n-    \n         \n@@ -1362,20 +1362,16 @@\n         \n- \n-   \n for i in\n@@ -1390,28 +1390,24 @@\n             \n-    \n print(i)%0A   \n@@ -1411,48 +1411,16 @@\n     \n-except ValueError as e:%0A        print(e)\n+        \n %0Amai\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-12-09_11-18-50",
+            "content": "from abc import ABC, abstractmethod\n\nclass Shapes(ABC):\n    def __init__(self, nome:str):\n        self.nome = nome\n    \n    @abstractmethod\n    def getarea(self):\n        pass\n    @abstractmethod\n    def getpertimeter(self):\n        pass\n    @abstractmethod    \n    def getname(self):\n        return self.nome\n\nclass Point2D:\n    def __init__(self, x: int, y: int):\n        self.x = x\n        self.y = y\n    \n    def __str__(self) -> str:\n        return f\"{self.x:.2f}, {self.y:.2f}\"\n        \nclass Circle(Shapes):\n    def __init__(self, center: Point2D, radius:float):\n        self.radius = radius\n        self.center = center\n    \n    def getarea(self):\n        return super().getarea()\n    def getname(self):\n        return super().getname()\n    def getpertimeter(self):\n        return super().getpertimeter()\n    def __str__(self) -> str:\n        return f'Circ: C=({self.center}), R={self.radius:.2f}'\n\n\ndef main():\n    forms: list[Shapes] = []\n    try:\n        while True:\n            linha = input()\n            args = linha.split(' ')\n            print(\"$\" + linha)\n            if args[0] == 'end':\n                break\n            elif args[0] == 'circle':\n                x = int(args[1])\n                y = int(args[2])\n                r = float(args[3])\n                center = Point2D(x, y)\n                circle = Circle(center, r)\n                forms.append(circle)\n            elif args[0] == 'show':\n                for i in forms:\n                    print(i)\n    except ValueError as e:\n        print(e)\nmain()\n# pontos = Point2D(2, 3)      \n# circulos = Circle(pontos, 5)\n# print(\"$circle 2 3 5\")\n# print(\"$show\")\n# print(circulos)\n# print(\"$end\")",
+            "lines": "67"
         }
     ]
 }

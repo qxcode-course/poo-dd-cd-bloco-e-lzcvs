@@ -29,3 +29,58 @@
 2025-12-09 10:04:03, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0
 2025-12-09 10:04:04, EXEC, v:1, k:poo@zoo, mode:LOCK, rate:0
 2025-12-09 10:04:05, MOVE, v:1, k:poo@zoo, mode:BACK
+2025-12-09 10:16:24, SELF, v:1, k:poo@zoo, rate:100, alone:10, study:160
+2025-12-09 10:18:03, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-09 10:18:03, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:41:59, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:39
+2025-12-09 10:42:11, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:39
+2025-12-09 10:43:07, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:40
+2025-12-09 10:43:13, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:41
+2025-12-09 10:43:24, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:41
+2025-12-09 10:43:26, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:45:12, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:41
+2025-12-09 10:51:37, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:51:38, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:51:53, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:52:03, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:52:17, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:53:22, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:53:28, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:54:23, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:54:46, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:55:09, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:55:11, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:55:16, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:55:17, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:43
+2025-12-09 10:55:35, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:55:38, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:55:46, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:55:57, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:56:12, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:56:13, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:56:36, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:56:36, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:56:37, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:56:59, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:57:04, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:57:19, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 10:57:22, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 10:57:42, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 11:00:00, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:44
+2025-12-09 11:00:01, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 11:00:12, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:45
+2025-12-09 11:00:13, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:45
+2025-12-09 11:03:36, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:54
+2025-12-09 11:03:37, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 11:03:42, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:53
+2025-12-09 11:04:30, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20
+2025-12-09 11:05:10, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20
+2025-12-09 11:13:38, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:64
+2025-12-09 11:13:38, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:64
+2025-12-09 11:14:16, EXEC, v:1, k:poo@shapes, mode:FULL, rate:40, size:65
+2025-12-09 11:14:32, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:64
+2025-12-09 11:15:02, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:64
+2025-12-09 11:15:13, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:65
+2025-12-09 11:18:50, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:67
+2025-12-09 11:18:51, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60
+2025-12-09 12:03:36, MOVE, v:1, k:poo@shapes, mode:BACK
