@@ -84,3 +84,28 @@
 2025-12-09 11:18:50, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:67
 2025-12-09 11:18:51, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60
 2025-12-09 12:03:36, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-09 15:46:51, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-09 15:46:52, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:70
+2025-12-09 16:01:24, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:70
+2025-12-09 16:01:25, EXEC, v:1, k:poo@shapes, mode:FULL, rate:20, size:71
+2025-12-09 16:02:06, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:70
+2025-12-09 16:14:50, EXEC, v:1, k:poo@shapes, mode:FULL, rate:40, size:92
+2025-12-09 16:15:05, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:92
+2025-12-09 16:15:19, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-09 16:15:30, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-09 16:15:31, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:92
+2025-12-09 16:16:01, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:92
+2025-12-09 16:16:32, EXEC, v:1, k:poo@shapes, mode:FULL, rate:80, size:92
+2025-12-09 16:17:36, EXEC, v:1, k:poo@shapes, mode:FULL, rate:80, size:92
+2025-12-09 16:27:46, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:95
+2025-12-09 16:27:47, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 16:34:29, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:97
+2025-12-09 16:34:30, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-09 16:34:48, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-09 16:34:49, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 16:34:49, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 16:34:51, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-09 16:35:01, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-09 16:35:02, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0
+2025-12-09 16:35:07, EXEC, v:1, k:poo@shapes, mode:FULL, rate:80, size:97
+2025-12-09 16:35:12, MOVE, v:1, k:poo@shapes, mode:BACK

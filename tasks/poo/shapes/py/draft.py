@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+import math
 class Shapes(ABC):
     def __init__(self, nome:str):
         self.nome = nome
@@ -39,7 +39,25 @@ class Circle(Shapes):
     def __str__(self) -> str:
         return f'Circ: C=({self.center}), R={self.radius:.2f}'
 
-
+class Rect(Shapes):
+    def __init__(self, p1: Point2D, p2: Point2D):
+        self.p1 = p1
+        self.p2 = p2
+    
+    def getarea(self):
+        return super().getarea()
+    def getname(self):
+        return super().getname()
+    def getpertimeter(self):
+        return super().getpertimeter()
+        
+    def __str__(self) -> str:
+        return f'Rect: P1=({self.p1}) P2=({self.p2})'
+        
+class Calc:
+    def distance(self, a: Point2D, b: Point2D):
+        return
+    
 def main():
     forms: list[Shapes] = []
     try:
@@ -56,6 +74,15 @@ def main():
                 center = Point2D(x, y)
                 circle = Circle(center, r)
                 forms.append(circle)
+            elif args[0] == 'rect':
+                x1 = int(args[1])
+                y1 = float(args[2])
+                x2 = float(args[3])
+                y2 = float(args[4])
+                p1 = Point2D(x1, y1)
+                p2 = Point2D(x2, y2)
+                rect = Rect(p1, p2)
+                forms.append(rect)
             elif args[0] == 'show':
                 for i in forms:
                     print(i)
