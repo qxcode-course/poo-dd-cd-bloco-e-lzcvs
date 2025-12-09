@@ -6,10 +6,10 @@ class Animal(ABC):
 
     def apresentar_nome(self):
         print(f"Eu sou um(a) {self.nome}")
-
+    @abstractmethod
     def fazer_som(self):
         pass
-
+    @abstractmethod
     def mover(self):
         pass
 
@@ -44,6 +44,7 @@ class Elefante(Animal):
 
 class Cachorro(Animal):
     def __init__(self, nome:str):
+        
         super().__init__(nome)
     
     def apresentar_nome(self):
@@ -54,16 +55,33 @@ class Cachorro(Animal):
     
     def mover(self):
         print("scrach scrach scrach")
+
+class Esponja(Animal):
+    def __init__(self, nome:str):
+        super().__init__(nome)
+    
+    def apresentar_nome(self):
+        return super().apresentar_nome()
+    
+    def fazer_som(self):
+        print("----------")
         
-def apresentarAnimal(animal: Animal):
-    print(f"{animal.__class__.__name__}")
-    print(f"{type(animal)}")
-    animal.apresentar_nome()
-    animal.fazer_som()
-    animal.mover()
+    # def mover(self):
+    #     pass
+        
+def apresentarAnimal(animais: list):
+    for animal in animais:
+        print(f"{animal.__class__.__name__}")
+        animal.apresentar_nome()
+        animal.fazer_som()
+        animal.mover()
 
 
+animais = [
+    Gatinho("Gatinho"),
+    Elefante("Dumbo"),
+    Cachorro("Alfredo"),
+    Esponja("BOB")
+]
 
-apresentarAnimal(Gatinho("Gatinho"))
-apresentarAnimal(Elefante("Dumbo"))
-apresentarAnimal(Cachorro("Alfredo"))
+apresentarAnimal(animais)
