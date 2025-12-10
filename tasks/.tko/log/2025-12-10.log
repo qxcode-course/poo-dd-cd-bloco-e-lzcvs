@@ -1,0 +1,29 @@
+2025-12-10 09:59:42, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-10 09:59:43, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:52
+2025-12-10 10:13:24, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-10 10:13:26, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-10 10:13:26, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:52
+2025-12-10 10:13:28, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-10 10:13:29, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-10 10:13:30, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:13:54, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:54
+2025-12-10 10:13:56, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:55
+2025-12-10 10:13:56, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:55
+2025-12-10 10:18:49, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:55
+2025-12-10 10:18:50, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:19:10, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:55
+2025-12-10 10:19:27, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:19:28, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:55
+2025-12-10 10:20:09, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:20:10, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:20:35, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:20:37, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:20:40, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:21:23, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:21:23, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:21:29, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:21:29, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0, size:57
+2025-12-10 10:21:38, MOVE, v:1, k:poo@estacionamento, mode:BACK
+2025-12-10 10:21:39, MOVE, v:1, k:poo@estacionamento, mode:PICK
+2025-12-10 10:21:40, EXEC, v:1, k:poo@estacionamento, mode:FULL, rate:0
+2025-12-10 10:21:41, MOVE, v:1, k:poo@estacionamento, mode:BACK

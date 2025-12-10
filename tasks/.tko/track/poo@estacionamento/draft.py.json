@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2025-12-01_15-55-54",
-            "content": "",
+            "content": "@@ -1,1180 +0,0 @@\n-from abc import ABC, abstractmethod%0A%0A%0Aclass Veiculo(ABC):%0A    def __init__(self, id: str, tipo: str, entrada: int):%0A        self.id = id%0A        self.tipo = tipo%0A        self.entrada = entrada%0A%0A    @abstractmethod%0A    def calcularvalor(self, horaSaida: int):%0A        pass%0A%0A    def setentrada(self, horaEntrada: int):%0A        self.horaEntrada = horaEntrada%0A%0A    def getentrada(self):%0A        return self.horaEntrada%0A%0A    def getTipo(self):%0A        return self.tipo%0A%0A    def getId(self):%0A        return self.id%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.tipo%7D, %7Bself.id%7D, %7Bself.entrada%7D%22%0A%0A%0Aclass Carro(Veiculo):%0A    def __init__(self, id: str):%0A        self.id = id%0A    %0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A    %0Aclass Bike(Veiculo):%0A    def __init__(self, id: str):%0A        self.id = id%0A        %0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida) %0A        %0Aclass Moto(Veiculo):%0A    def __init__(self, id: str):%0A        self.id = id%0A        %0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A        %0Abike = Bike(%2288%22)%0Aprint(bike)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-12-10_09-59-43",
+            "content": "@@ -31,17 +31,16 @@\n ethod%0A%0A%0A\n-%0A\n class Ve\n@@ -660,40 +660,24 @@\n    s\n-uper().__init__(id, %22Carro%22, 0)%0A\n+elf.id = id%0A    \n %0A   \n@@ -762,24 +762,28 @@\n (horaSaida)%0A\n+    \n %0Aclass Bike(\n@@ -838,39 +838,28 @@\n    s\n-uper().__init__(id, %22Bike%22, 0)%0A\n+elf.id = id%0A        \n %0A   \n@@ -947,17 +947,26 @@\n raSaida)\n-%0A\n+ %0A        \n %0Aclass M\n@@ -1025,44 +1025,24 @@\n    s\n-uper().__init__(id, %22Moto%22, 0)\n+elf.id = id\n %0A    \n-%0A\n     \n@@ -1091,93 +1091,8 @@\n t):%0A\n-        print(f%22f%7Bself.tipo%7D chegou %7Bself.entrada%7D saiu %7BhoraSaida%7D. Pagar R$ 9.00%22)%0A\n     \n@@ -1115,28 +1115,66 @@\n ().calcularvalor(horaSaida)%0A\n+        %0Abike = Bike(%2288%22)%0Aprint(bike)\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-12-10_10-13-26",
+            "content": "@@ -1259,22 +1259,4 @@\n da)%0A\n-%0Amoto = Moto(%2290%22)\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-12-10_10-13-54",
+            "content": "@@ -1,1364 +1,47 @@\n-from abc import ABC, abstractmethod%0A%0A%0A%0Aclass Veiculo(ABC):%0A    def __init__(self, id: str, tipo: str, entrada: int):%0A        self.id = id%0A        self.tipo = tipo%0A        self.entrada = entrada%0A%0A    @abstractmethod%0A    def calcularvalor(self, horaSaida: int):%0A        pass%0A%0A    def setentrada(self, horaEntrada: int):%0A        self.horaEntrada = horaEntrada%0A%0A    def getentrada(self):%0A        return self.horaEntrada%0A%0A    def getTipo(self):%0A        return self.tipo%0A%0A    def getId(self):%0A        return self.id%0A%0A    def __str__(self):%0A        resultado = f%22%7Bself.tipo:%3E10%7D-:-%7Bself.id:%3E10%7D-:-%7Bself.horaEntrada%7D%22%0A        return resultado.replace(' ', '_').replace('-', ' ')%0A%0Aclass Carro(Veiculo):%0A    def __init__(self, id: str):%0A        super().__init__(id, %22Carro%22, 0)%0A%0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A%0Aclass Bike(Veiculo):%0A    def __init__(self, id: str):%0A        super().__init__(id, %22Bike%22, 0)%0A%0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A%0Aclass Moto(Veiculo):%0A    def __init__(self, id: str):%0A        super().__init__(id, %22Moto%22, 0)%0A    %0A    %0A    def calcularvalor(self, horaSaida: int):%0A        print(f%22f%7Bself.tipo%7D chegou %7Bself.entrada%7D saiu %7BhoraSaida%7D. Pagar R$ 9.00%22)%0A        return super().calcularvalor(horaSaida)%0A%0Amoto = Moto(%2290%22)%0Aprint(moto)\n+@@ -1277,16 +1277,4 @@%0A 90%2522)%0A-%250Aprint(moto)%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-10_10-18-49",
+            "content": "@@ -585,25 +585,29 @@\n 10%7D-:-%7Bself.\n-e\n+horaE\n ntrada%7D%22%0A   \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-12-10_10-19-10",
+            "content": "@@ -1341,13 +1341,10 @@\n to(%22\n-elias\n+90\n %22)%0Ap\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-12-10_10-19-28",
+            "content": "@@ -1349,42 +1349,8 @@\n s%22)%0A\n-bike = Bike(%22elias%22, 30)%0Aprint = %0A\n prin\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-12-10_10-20-09",
+            "content": "@@ -1379,14 +1379,11 @@\n rint\n-(bike)\n+ = \n %0Apri\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-12-10_10-20-10",
+            "content": "@@ -899,38 +899,24 @@\n elf, id: str\n-, entrada: int\n ):%0A        s\n@@ -943,23 +943,17 @@\n %22Bike%22, \n-entrada\n+0\n )%0A%0A    d\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-12-10_10-20-35",
+            "content": "@@ -1,922 +1,157 @@\n-from abc import ABC, abstractmethod%0A%0A%0A%0Aclass Veiculo(ABC):%0A    def __init__(self, id: str, tipo: str, entrada: int):%0A        self.id = id%0A        self.tipo = tipo%0A        self.entrada = entrada%0A%0A    @abstractmethod%0A    def calcularvalor(self, horaSa\n+@@ -709,38 +709,24 @@%0A elf, \n id\n-a\n : \n-int):%0A        pass%0A%0A    def setentrada(self, horaEntrada: int):%0A        self.horaEntrada = horaEntrada%0A%0A    def getentrada(self):%0A        return self.horaEntrada%0A%0A    def getTipo(self):%0A        return self.tipo%0A%0A    def getId(self):%0A        return self.id%0A%0A    def __str__(self):%0A        resultado = f%22%7Bself.tipo:%3E10%7D-:-%7Bself.id:%3E10%7D-:-%7Bself.entrada%7D%22%0A        return resultado.replace(' ', '_').replace('-', ' ')%0A%0Aclass Carro(Veiculo):%0A    def __init__(self, id: str, entrada: int):%0A        super().__init__(id, %22Carro%22, entrada)%0A%0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A%0Aclass Bike(Veiculo):%0A    def __init__(s\n+str%0A-, entrada: int%0A ):%250A        s%0A@@ -754,23 +754,17 @@%0A Carro%2522, %0A-entrada%0A+0%0A )%250A%250A    d%0A@@ -1108,38 +1108,24 @@%0A \n elf,\n@@ -150,32 +150,34 @@\n @@%0A elf, id: str\n+%0A-\n , entrada: int):\n@@ -178,520 +178,85 @@\n  int\n-):%0A        super().__init__(id, %22Bike%22, entrada)%0A%0A    def calcularvalor(self, horaSaida: int):%0A        return super().calcularvalor(horaSaida)%0A%0Aclass Moto(Veiculo):%0A    def __init__(self, id: str, entrada: int):%0A        super().__init__(id, %22Moto%22, entrada)%0A    %0A    %0A    def calcularvalor(self, horaSaida: int):%0A        print(f%22f%7Bself.tipo%7D chegou %7Bself.entrada%7D saiu %7BhoraSaida%7D. Pagar R$ 9.00%22)%0A        return super().calcularvalor(horaSaida)%0A%0Amoto = Moto(%22elias%22)%0Abike = Bike(%22elias%22, 30)%0Aprint(bike)%0Aprint(moto)\n+%0A ):%250A        s%0A@@ -1152,23 +1152,17 @@%0A %2522Moto%2522, %0A-entrada%0A+0%0A )%250A    %250A %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-12-10_10-21-28",
+            "content": "@@ -1407,12 +1407,8 @@\n ias%22\n-, 20\n )%0Abi\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-12-10_10-21-29",
+            "content": "from abc import ABC, abstractmethod\n\n\n\nclass Veiculo(ABC):\n    def __init__(self, id: str, tipo: str, entrada: int):\n        self.id = id\n        self.tipo = tipo\n        self.entrada = entrada\n\n    @abstractmethod\n    def calcularvalor(self, horaSaida: int):\n        pass\n\n    def setentrada(self, horaEntrada: int):\n        self.horaEntrada = horaEntrada\n\n    def getentrada(self):\n        return self.horaEntrada\n\n    def getTipo(self):\n        return self.tipo\n\n    def getId(self):\n        return self.id\n\n    def __str__(self):\n        resultado = f\"{self.tipo:>10}-:-{self.id:>10}-:-{self.entrada}\"\n        return resultado.replace(' ', '_').replace('-', ' ')\n\nclass Carro(Veiculo):\n    def __init__(self, id: str, entrada: int):\n        super().__init__(id, \"Carro\", entrada)\n\n    def calcularvalor(self, horaSaida: int):\n        return super().calcularvalor(horaSaida)\n\nclass Bike(Veiculo):\n    def __init__(self, id: str, entrada: int):\n        super().__init__(id, \"Bike\", entrada)\n\n    def calcularvalor(self, horaSaida: int):\n        return super().calcularvalor(horaSaida)\n\nclass Moto(Veiculo):\n    def __init__(self, id: str, entrada: int):\n        super().__init__(id, \"Moto\", entrada)\n    \n    \n    def calcularvalor(self, horaSaida: int):\n        print(f\"f{self.tipo} chegou {self.entrada} saiu {horaSaida}. Pagar R$ 9.00\")\n        return super().calcularvalor(horaSaida)\n\nmoto = Moto(\"elias\", 20)\nbike = Bike(\"elias\", 30)\nprint(bike)\nprint(moto)",
+            "lines": "57"
         }
     ]
 }
