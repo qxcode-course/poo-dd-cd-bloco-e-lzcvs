@@ -37,6 +37,7 @@ class Carro(Veiculo):
         valor = diferenca / 10
         if valor < 5:
             valor = 5
+        print(f"{self.tipo} chegou {self.entrada} saiu {horaSaida}. Pagar R$ {valor:.2f}")
         return valor
 
 
@@ -46,6 +47,7 @@ class Bike(Veiculo):
 
     def calcularvalor(self, horaSaida: int):
         valor = "R$ 3.00"
+        print(f"{self.tipo} chegou {self.entrada} saiu {horaSaida}. Pagar {valor}")
         return valor
 
 
@@ -55,7 +57,8 @@ class Moto(Veiculo):
 
     def calcularvalor(self, horaSaida: int):
         diferenca = horaSaida - self.entrada
-        valor = diferenca / 10
+        valor = diferenca / 20
+        print(f"{self.tipo} chegou {self.entrada} saiu {horaSaida}. Pagar R$ {valor:.2f}")
         return valor
 
 
@@ -69,32 +72,33 @@ class Estacionamento:
             if veiculo.getId() == id:
                 return veiculo
         return None
-        
+
     def setHora(self, nova_hora: int):
         self.horaAtual = nova_hora
-    
+
     def estacionar(self, veiculo: Veiculo):
         if self.procurarveiculo(veiculo.getId()) is not None:
             return
         veiculo.setentrada(self.horaAtual)
         self.veiculos.append(veiculo)
-        
+
     def passartempo(self, tempo: int):
         self.horaAtual += tempo
-        
+
     def __str__(self) -> str:
         if self.veiculos != []:
                 txt = ""
                 for v in self.veiculos:
                     txt += str(v) + "\n"
-                    txt += f"Hora atual: {self.horaAtual}"
+                txt += f"Hora atual: {self.horaAtual}"
                 return txt
         else:
             return f"Hora atual: {self.horaAtual}"
 
-    def show(self):
-        print(self)
-
+    def pagar(self, id: str):
+        veiculo = self.procurarveiculo(id)
+        valor = veiculo.calcularvalor(self.horaAtual)
+        return valor
 
 def main():
     estacionamento = Estacionamento()
@@ -105,7 +109,7 @@ def main():
         if args[0] == "end":
             break
         elif args[0] == "show":
-            estacionamento.show()
+            print(estacionamento)
         elif args[0] == "estacionar":
             tipo = args[1]
             id = args[2]
@@ -122,5 +126,8 @@ def main():
         elif args[0] == 'tempo':
             tempo = int(args[1])
             estacionamento.passartempo(tempo)
+        elif args[0] == 'pagar':
+            id =args[1]
+            estacionamento.pagar(id)
 
 main()
